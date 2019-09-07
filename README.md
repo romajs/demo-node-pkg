@@ -70,9 +70,9 @@ Or:
 Verifying signature for linux package:
 
 
-``
+```
 gpg --verify build/demo-node-pkg-linux.sig build/demo-node-pkg-linux
-``
+```
 
 ---
 
