@@ -31,6 +31,14 @@ Can be also used in watch mode:
 npm run lint:watch
 ```
 
+### Importing gpg keys
+
+Must known passphrase!
+
+```
+gpg --import gpg/private.key
+```
+
 ### Building executable package
 
 Every build output will be at `./build` folder.
@@ -58,6 +66,13 @@ Or:
 ```
 ./build/demo-node-pkg-linux --logger-level=info
 ```
+
+Verifying signature for linux package:
+
+
+``
+gpg --verify build/demo-node-pkg-linux.sig build/demo-node-pkg-linux
+``
 
 ---
 
